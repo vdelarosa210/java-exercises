@@ -10,7 +10,7 @@ public class Pizza {
         Scanner scan = new Scanner(System.in);
         System.out.println();
 
-/*        Create a pizza order CLI app using the users input fro the terminal.
+/*          Create a pizza order CLI app using the users input fro the terminal.
         - Ask for the size of the pizza, show them at least 3 options, each size will have a different price.
         - Ask for the type of pizza, show at least 5 options.
         - Ask for any extras, ask for at least 10 options. Each extra will cost $1.50 USD.
