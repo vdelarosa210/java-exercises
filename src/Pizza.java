@@ -18,6 +18,7 @@ public class Pizza {
         (Make it look like a ticket). Use the proper data type for each variable that you need to create for your app. */
     }
 
+    git rm --cached
 
 
 }
