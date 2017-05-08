@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Pizza {
     public static void main(String[] args) {
-        scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println();
 
 /*        Create a pizza order CLI app using the users input fro the terminal.
@@ -18,7 +18,6 @@ public class Pizza {
         (Make it look like a ticket). Use the proper data type for each variable that you need to create for your app. */
     }
 
-    git rm --cached
 
 
 }
