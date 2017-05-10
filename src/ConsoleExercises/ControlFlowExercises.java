@@ -96,21 +96,53 @@ public class ControlFlowExercises {
 //        }
 
         //=====Grades=====//
+//
+//        System.out.println("Please provide a grade between 0-100");
+//        int grd = data.nextInt();
+//
+//        if (grd <= 60){
+//            System.out.println("F");
+//        } else if (grd >= 61 & grd <= 66){
+//            System.out.println("D");
+//        } else if (grd >= 67 & grd <= 79){
+//            System.out.println("C");
+//        } else if (grd >= 80 & grd <=87){
+//            System.out.println("B");
+//        } else if (grd >= 88){
+//            System.out.println("A");
+//        }
 
-        int g = 0;
-        System.out.println("Please provide a grade between 0-100");
-        int grd = data.nextInt();
+        //=====Grades Part II=====//
 
-        if (grd <= 60){
+        System.out.println("Please rate your classmate with a grade between 0-100");
+        int grade = data.nextInt();
+
+        if (grade <= 60){
             System.out.println("F");
-        } else if (grd >= 61 & grd <= 66){
+        } else if (grade >= 61 & grade <= 62){
+            System.out.println("D-");
+        } else if (grade >= 63 & grade <= 64) {
             System.out.println("D");
-        } else if (grd >= 67 & grd <= 79){
+        } else if (grade >= 65 & grade <= 66){
+            System.out.println("D+");
+        } else if (grade >= 67 & grade <= 70){
+            System.out.println("C-");
+        } else if (grade >= 71 & grade <= 74){
             System.out.println("C");
-        } else if (grd >= 80 & grd <=87){
+        } else if (grade >= 75 & grade <= 79){
+            System.out.println("C+");
+        } else if (grade >= 80 & grade <= 82){
+            System.out.println("B-");
+        } else if (grade >= 83 & grade <= 85){
             System.out.println("B");
-        } else if (grd >= 88){
+        } else if (grade >= 86 & grade <= 87){
+            System.out.println("B+");
+        } else if (grade >= 88 & grade <= 91){
+            System.out.println("A-");
+        } else if (grade >= 92 & grade <= 96){
             System.out.println("A");
+        } else if (grade >= 97 & grade <= 100) {
+            System.out.println("A+");
         }
 
         }
