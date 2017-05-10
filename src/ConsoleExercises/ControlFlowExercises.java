@@ -83,18 +83,37 @@ public class ControlFlowExercises {
 //
 //        //=====Table of Powers=====//
 
-        int b = 1;
+//        int b = 1;
+//
+//        System.out.println("What number would you like to go up to?");
+//        int num = data.nextInt();
+//        System.out.println("number" + " | " + "squared" + " | " + "cubed");
+//        while (b <= num) {
+//            int sqr = b * b;
+//            int cbd = b * b * b;
+//            System.out.println(b + "      | " + sqr +  "       | " + cbd);
+//            b++;
+//        }
 
-        System.out.println("What number would you like to go up to?");
-        int num = data.nextInt();
-        System.out.println("number" + " | " + "squared" + " | " + "cubed");
-        while (b <= num) {
-            int sqr = b * b;
-            int cbd = b * b * b;
-            System.out.println(b + "      | " + sqr +  "       | " + cbd);
-            b++;
+        //=====Grades=====//
+
+        int g = 0;
+        System.out.println("Please provide a grade between 0-100");
+        int grd = data.nextInt();
+
+        if (grd <= 60){
+            System.out.println("F");
+        } else if (grd >= 61 & grd <= 66){
+            System.out.println("D");
+        } else if (grd >= 67 & grd <= 79){
+            System.out.println("C");
+        } else if (grd >= 80 & grd <=87){
+            System.out.println("B");
+        } else if (grd >= 88){
+            System.out.println("A");
+        }
+
         }
 
     }
 
-    }
