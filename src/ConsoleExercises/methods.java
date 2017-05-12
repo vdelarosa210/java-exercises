@@ -21,18 +21,22 @@ public class methods {
         } while (confirm(n2) == false);
 
         int result = addition(n1, n2);
-        System.out.println(result);
+        System.out.println(n1 + " + " + n2 + " = " + result);
 
         result = subtraction(n1, n2);
-        System.out.println(result);
+        System.out.println(n1 + " - " + n2 + " = " + result);
 
         result = multiplication (n1, n2);
-        System.out.println(result);
+        System.out.println(n1 + " * " + n2 + " = " + result);
 
         System.out.println(division(n1,n2));
 
         result = modulus(n1, n2);
-        System.out.println(result);
+        System.out.println("The modulus of " + n1 + " & " + n2 + " = " + result);
+
+        result = factorial(n1);
+        System.out.println("The factorial of " + n1 + " is " + result);
+
     }
     //=====requests for a number to be entered=====//
     public static int askForNumber(Scanner input) {
@@ -68,6 +72,15 @@ public class methods {
     //=====modulus=====//
     public static int modulus (int n1, int n2){
         return (n1 % n2);
+    }
+
+    //=====factorial=====//
+    public static int factorial(int n1){
+        int result = 1;
+        for (int i = 1; i <= n1; i++){
+            result = result * i;
+        }
+        return (result);
     }
 }
 
