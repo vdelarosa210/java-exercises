@@ -34,13 +34,11 @@ public class methods {
         result = modulus(n1, n2);
         System.out.println(result);
     }
-
     //=====requests for a number to be entered=====//
     public static int askForNumber(Scanner input) {
         System.out.println("Enter a number between 1 and 10");
         return input.nextInt();
     }
-
     //=====confirms that the number is between 1-10=====//
     public static boolean confirm(int number) {
         if (number >= 1 && number <= 10) {
@@ -49,38 +47,28 @@ public class methods {
             System.out.println("The number is not between 1 and 10, please try again.");
             return false;
         }
-
     }
-    //=====modulus=====//
-
-    public static int modulus (int n1, int n2){
-        return (n1 % n2);
-    }
-
-
     //=====addition=====//
     public static int addition(int n1, int n2) {
         return (n1 + n2);
     }
-
     //=====subtraction=====//
     public static int subtraction(int n1, int n2) {
         return (n1 - n2);
     }
-
     //=====multiplication=====//
 
     public static int multiplication(int n1, int n2) {
         return (n1 * n2);
     }
-
     //=====division====//
-
     public static float division(int n1, int n2) {
         return  (float) n1 / (float) n2;
     }
-
-
+    //=====modulus=====//
+    public static int modulus (int n1, int n2){
+        return (n1 % n2);
+    }
 }
 
 
