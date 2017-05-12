@@ -30,6 +30,9 @@ public class methods {
         System.out.println(result);
 
         System.out.println(division(n1,n2));
+
+        result = modulus(n1, n2);
+        System.out.println(result);
     }
 
     //=====requests for a number to be entered=====//
@@ -48,9 +51,11 @@ public class methods {
         }
 
     }
-//=====use for loop to calculate factorial=====//
+    //=====modulus=====//
 
-//    public static void factorial (+ - * /)
+    public static int modulus (int n1, int n2){
+        return (n1 % n2);
+    }
 
 
     //=====addition=====//
