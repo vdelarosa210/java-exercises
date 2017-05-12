@@ -89,13 +89,14 @@ public class methods {
     }
 
     //=====factorial=====//
-    public static int factorial(int n1) {
+    public static int factorial(long n1) {
         int result = 1;
         for (int i = 1; i <= n1; i++) {
             result = result * i;
         }
         return (result);
     }
+
 }
 
 
