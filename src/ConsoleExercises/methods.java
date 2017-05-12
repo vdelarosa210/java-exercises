@@ -32,13 +32,13 @@ public class methods {
             result = multiplication(n1, n2);
             System.out.println(n1 + " * " + n2 + " = " + result);
 
-            System.out.println(division(n1, n2));
+            System.out.println(n1 + " / " + n2 + " = " + division(n1, n2));
 
             result = modulus(n1, n2);
             System.out.println("The modulus of " + n1 + " & " + n2 + " = " + result);
 
             result = factorial(n1);
-            System.out.println("The factorial of " + n1 + " is " + result);
+            System.out.println("The factorial of " + n1 + "! = " + result);
 
     //=====ask if they want to continue=====//
             System.out.println("Do you want to continue? (y/n)");
@@ -91,7 +91,7 @@ public class methods {
     //=====factorial=====//
     public static int factorial(long n1) {
         int result = 1;
-        for (int i = 1; i <= n1; i++) {
+        for (int i = 1; i <= n1; i++){
             result = result * i;
         }
         return (result);
