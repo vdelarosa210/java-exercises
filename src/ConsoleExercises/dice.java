@@ -10,6 +10,7 @@ public class dice {
 
         Scanner data = new Scanner(System.in);
 
+        //=====DICE GAME=====//
         String rollAgain;
 
         do{
@@ -29,4 +30,5 @@ public class dice {
         public static int roll(int sides){
             return 1 + (int)(Math.random() * sides);
         }
+
 }
