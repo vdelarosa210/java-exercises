@@ -1,4 +1,4 @@
-package ConsoleExercises;
+package Java1;
 
 import java.util.Scanner;
 
@@ -35,9 +35,9 @@ public class store {
                     int quantity = quantity(input);
                     total += cost * quantity;
                     shop += item + " " + "$" + cost + " " + quantity + "\n";
-                    System.out.println("Would you like to purchase another item? (y/n)");
 
-                } while (input.next().equalsIgnoreCase("y"));
+
+                } while (confirm(input, "Would you like to purchase another item? (y/n)"));
                 shop += "\n Total: " + total;
             }
 
@@ -49,12 +49,24 @@ public class store {
                 System.exit(0);
             }
 
-            System.out.println("Would you like to go back to the main menu? (y/n)");
-            wantsToReturnToMainMenu = input.next();
-        } while (wantsToReturnToMainMenu.equalsIgnoreCase("y"));
+
+        } while (confirm(input, "Would you like to go back to the main menu? (y/n)"));
 
     }
 
+    public static Boolean confirm(Scanner input, String message) {
+        System.out.println(message);
+        String yn = input.next();
+
+        if (!yn.equalsIgnoreCase("y")&&!yn.equalsIgnoreCase("n")) {
+
+            System.out.println("Sorry, I didn't catch that.");
+            return confirm(input, message);
+            // ask question again
+        }
+        return yn.equalsIgnoreCase("y");
+
+    }
 
     public static String item(Scanner input) {
         System.out.println("What would you like to purchase?");

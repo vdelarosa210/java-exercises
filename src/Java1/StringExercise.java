@@ -1,4 +1,4 @@
-package ConsoleExercises;
+package Java1;
 
 import java.util.Scanner;
 
