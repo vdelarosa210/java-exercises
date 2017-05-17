@@ -13,6 +13,8 @@ public class InputTest {
         System.out.println("Your names is " + name.getString());
 
         //=====Utilize Boolean=====//
+        System.out.println("Would you mind answering a few more questions? (y/n)");
+
 
 
     }
