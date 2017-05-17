@@ -18,6 +18,12 @@ public class InputTest {
         System.out.println("Do you mind answering a few more questions? (y/n)");
         System.out.println(response.yesNo());
 
+        int min = 1;
+        int max = 10;
+
+        System.out.println("Please provide a number between " + min + " and " + max);
+        System.out.println("The number you provided is " + response.getInt(min, max));
+
 
     }
 
