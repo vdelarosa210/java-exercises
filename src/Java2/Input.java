@@ -10,18 +10,23 @@ public class Input {
     private Scanner scan;
 
     //======Constructor======//
-    public Input(){
+    public Input() {
         this.scan = new Scanner(System.in);
     }
 
-    public String getString(){
+    public String getString() {
         return scan.next();
     }
 
-    public Boolean yesNo(){
-        return scan.equals("y");
+    public boolean yesNo() {
+        String answer = this.getString();
+        if (answer.equalsIgnoreCase("y") || (answer.equalsIgnoreCase("yes"))) {
+            return true;
+        } return false;
     }
 
 
-
 }
+
+
+
