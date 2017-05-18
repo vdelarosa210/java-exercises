@@ -15,7 +15,6 @@ public class NameGenerator {
         int rdm = (int) Math.floor(Math.random() * 10);
 
         System.out.println("The name generated is " + adjectives[rdm] + " " + nouns[rdm]);
-        System.out.println(rdm);
 
     }
 
