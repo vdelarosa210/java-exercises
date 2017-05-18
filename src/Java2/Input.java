@@ -39,6 +39,20 @@ public class Input {
         System.out.println(n1 + " is out of range. Please try again.");
         return getInt(min, max);
     }
+//
+//    public double getDouble() {
+//        return scan.nextDouble();
+//    }
+//
+//    public double getDouble(int min, int max) {
+//        int n1 = this.getDouble();
+//
+//        if (n1 >= min && n1 <= max) {
+//            return n1;
+//        }
+//        System.out.println(n1 + " is out of range. Please try again.");
+//        return getDouble(min, max);
+//    }
 
 }
 

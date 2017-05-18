@@ -24,6 +24,13 @@ public class InputTest {
         System.out.println("Please provide a number between " + min + " and " + max);
         System.out.println("The number you provided is " + response.getInt(min, max));
 
+        double minD = 10;
+        double maxD = 100;
+
+//        System.out.println("Please provide a price between " + minD + " and " + maxD);
+//        System.out.printf("The price you provided is " + response.getDouble(minD, maxD));
+
+
 
     }
 
