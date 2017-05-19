@@ -6,19 +6,21 @@ package Java2;
 public class Square extends Rectangle {
 
 
-    //=====Constructor from parent for side=====//
-    public Square( int side) {
-        super(side, side);
-    }
 
-    //=====Overrides=====//
-    public int getArea(){
-        System.out.println("The area comes from th Square class");
-        return super.getArea();
-    }
-
-    public int getPerimeter(){
-        System.out.println("The area comes from th Square class");
-        return super.getPerimeter();
-    }
+    //EXERCISE 6.3 INHERITANCE & POLYMORPHISM//
+//    //=====Constructor from parent for side=====//
+//    public Square( int side) {
+//        super(side, side);
+//    }
+//
+//    //=====Overrides=====//
+//    public int getArea(){
+//        System.out.println("The area comes from th Square class");
+//        return super.getArea();
+//    }
+//
+//    public int getPerimeter(){
+//        System.out.println("The area comes from th Square class");
+//        return super.getPerimeter();
+//    }
 }
