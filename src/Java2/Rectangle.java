@@ -12,22 +12,22 @@ public class Rectangle extends Quadralateral implements Measurable{
 
     @Override
     void setLength(Double length) {
-
+        this.length = length;
     }
 
     @Override
     void setWidth(Double width) {
-
+        this.width = width;
     }
 
     @Override
     public double getPerimeter() {
-        return 0;
+        return 2 * this.length + 2 * this.width;
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return this.length * this.width;
     }
 }
 
