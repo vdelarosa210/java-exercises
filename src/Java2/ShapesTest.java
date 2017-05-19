@@ -6,5 +6,9 @@ package Java2;
 public class ShapesTest {
     public static void main(String[] args) {
 
+
+
+
+
     }
 }

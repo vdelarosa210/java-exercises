@@ -6,15 +6,10 @@ package Java2;
 public class Square extends Rectangle {
 
 
-    //=====Constructor from parent=====//
-    public Square(int length, int width) {
-        super(length, width);
+    //=====Constructor from parent for side=====//
+    public Square( int side) {
+        super(side, side);
     }
 
-    //=====side Method=====//
-
-    public static int side(){
-
-    }
 
 }
