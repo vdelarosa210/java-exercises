@@ -6,6 +6,12 @@ package Java2;
 public class MoviesApplication {
     public static void main(String[] args) {
 
+        MoviesArray listObject =
+        MoviesArray listOfMovies = new MoviesArray();
+        Movie[] listOfMovies;
+
+        for
+
         while (true) {
             System.out.println("What would you like to do?\n" +
                     "\n" +
@@ -17,20 +23,44 @@ public class MoviesApplication {
                     "5 - view movies in the scifi category)");
             System.out.println("Please choose one");
 
+
+            //create Scanner
             switch (scan.nextInt()) {
                 case 0:
                     System.exit(0);
                     break;
                 case 1:
-                    for (Movie movie: listOfMovies) {
-                        System.out.println(movie.getName() + " - " + movie.getCategory);
-                    }
+                    printByCategory(listOfMovies, "animated");
+                {
+                    break;
+                }
                 case 2:
+                    printByCategory(listOfMovies, "drama");
+                {
+                    break;
+                    case 3:
+                        printByCategory(listOfMovies, "horror");
+                    {
+                        break;
+                    }
+                    case 4:
+                        printByCategory(listOfMovies, "scifi");
+                    {
+                        break;
+                    }
+                }
                 default:
+                    System.out.println("Your choice is not valid, please try again.");
             }
 
         }
-
-
     }
+
+    public static void printByCategory(Movie[] movies, String category) {
+        if (movie.getCategory().equalsIgnoreCase("animated")) {
+            System.out.println(movie.getName() + " - " + movie.getCategory());
+        }
+    }
+
 }
+
