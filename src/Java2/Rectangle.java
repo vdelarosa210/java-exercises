@@ -3,10 +3,36 @@ package Java2;
 /**
  * Created by violet on 5/19/17.
  */
-public class Rectangle {
+public class Rectangle extends Quadralateral implements Measurable{
 
 
-    //EXERCISE 6.3 INHERITANCE & POLYMORPHISM//
+    public Rectangle(Double length, Double width) {
+        super(length, width);
+    }
+
+    @Override
+    void setLength(Double length) {
+
+    }
+
+    @Override
+    void setWidth(Double width) {
+
+    }
+
+    @Override
+    public double getPerimeter() {
+        return 0;
+    }
+
+    @Override
+    public double getArea() {
+        return 0;
+    }
+}
+
+
+//EXERCISE 6.3 INHERITANCE & POLYMORPHISM//
 //    private int length;
 //    private int width;
 //
@@ -25,6 +51,3 @@ public class Rectangle {
 //    public int getArea() {
 //        return this.length * this.width;
 //    }
-
-}
-
