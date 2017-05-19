@@ -11,5 +11,14 @@ public class Square extends Rectangle {
         super(side, side);
     }
 
+    //=====Overrides=====//
+    public int getArea(){
+        System.out.println("The area comes from th Square class");
+        return super.getArea();
+    }
 
+    public int getPerimeter(){
+        System.out.println("The area comes from th Square class");
+        return super.getPerimeter();
+    }
 }
