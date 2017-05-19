@@ -4,8 +4,8 @@ package Java2;
  * Created by violet on 5/19/17.
  */
 public class Square extends Quadralateral {
-    public Square(Double length, Double width) {
-        super(length, width);
+    public Square(Double side) {
+        super(side, side);
     }
 
     @Override
