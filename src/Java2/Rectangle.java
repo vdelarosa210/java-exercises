@@ -14,13 +14,13 @@ public class Rectangle {
     }
 
     //=====Perimeter formula=====//
-    public int getPerimeter(int length, int width) {
-        return 2 * length + 2 * width;
+    public int getPerimeter() {
+        return 2 * this.length + 2 * this.width;
     }
 
     //=====Area formula=====//
-    public int getArea(int length, int width) {
-        return length * width;
+    public int getArea() {
+        return this.length * this.width;
     }
 
 }
