@@ -14,12 +14,12 @@ public class Rectangle {
     }
 
     //=====Perimeter formula=====//
-    public static int getPerimeter(int length, int width) {
+    public int getPerimeter(int length, int width) {
         return 2 * length + 2 * width;
     }
 
     //=====Area formula=====//
-    public static int getArea(int length, int width) {
+    public int getArea(int length, int width) {
         return length * width;
     }
 
