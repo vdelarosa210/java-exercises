@@ -1,17 +1,16 @@
-//package Java2;
-//
-///**
-// * Created by violet on 5/18/17.
-// */
+package Java2;
+
+/**
+ * Created by violet on 5/18/17.
+ */
 //public class MoviesApplication {
 //    public static void main(String[] args) {
 //
-//        MoviesArray listObject =
-//        MoviesArray listOfMovies = new MoviesArray();
-//        Movie[] listOfMovies;
+//        MoviesArray listObject = new MoviesArray();
+//        Movie[] listOfMovies = listObject.findAll();
+//        Scanner scan = new Scanner(System.in);
 //
-//        for
-//
+
 //        while (true) {
 //            System.out.println("What would you like to do?\n" +
 //                    "\n" +
@@ -23,9 +22,12 @@
 //                    "5 - view movies in the scifi category)");
 //            System.out.println("Please choose one");
 //
-//
 //            //create Scanner
-//            switch (scan.nextInt()) {
+//            int option = scan.nextInt();
+//            scan.nextLine();
+//
+//
+//            switch (option) {
 //                case 0:
 //                    System.exit(0);
 //                    break;
@@ -48,6 +50,12 @@
 //                    {
 //                        break;
 //                    }
+//                    case 5:
+//                        printByCategory(listOfMovies, "scifi");
+//                        break;
+//                    case 6:
+//                        listOfMovies = addMovie(scan, listOfMovies);
+//                        break;
 //                }
 //                default:
 //                    System.out.println("Your choice is not valid, please try again.");
@@ -56,10 +64,32 @@
 //        }
 //    }
 //
-//    public static void printByCategory(Movie[] movies, String category) {
-//        if (movie.getCategory().equalsIgnoreCase("animated")) {
-//            System.out.println(movie.getName() + " - " + movie.getCategory());
+//    //Prints the list of movies by a specific category
+//    public static void printByCategory(Movie[] movies, String category){
+//
+//        for(Movie m : movies){
+//            if(m.getCategory().equalsIgnoreCase(category)){
+//                System.out.println( m.getName() + " - " + m.getCategory() );
+//            }
 //        }
+//
+//    }
+//
+//    // Adds a new Movie object to the list of movies array and returns it so it could be used in the main method
+//    public static Movie[] addMovie(Scanner scan, Movie[] listOfMovies){
+//
+//        System.out.println("Give me the name:");
+//        String name = scan.nextLine();
+//
+//        System.out.println("Give me the category:");
+//        String category = scan.nextLine();
+//
+//        Movie newMovie = new Movie(name, category);
+//
+//        //Makes a copy of the array and adds a new index position so we can add the new Movie object
+//        listOfMovies = Arrays.copyOf(listOfMovies, listOfMovies.length+1);
+//        listOfMovies[listOfMovies.length-1] = newMovie;
+//        return listOfMovies;
 //    }
 //
 //}

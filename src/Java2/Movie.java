@@ -10,7 +10,7 @@ public class Movie {
 
     private String category;
 
-    //=====constructor=====//
+////    =====constructor=====//
 //    public Movie() {
 //        this.scan = new Scanner(System.in);
 //    }

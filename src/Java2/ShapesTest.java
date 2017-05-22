@@ -22,7 +22,7 @@ public class ShapesTest {
 
         System.out.println("The measurements of this square box are: Perimeter = " + box2.getPerimeter() + " inches" + " & Area =  " + box2.getArea() + " inches");
 
-        //=====Override of Box 2=====//
+
 
     }
 }
