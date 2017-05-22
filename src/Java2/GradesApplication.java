@@ -28,7 +28,15 @@ public class GradesApplication {
         students.put("Jovani", 88);
         students.put("Jonathan", 95);
 
+        System.out.println("Welcome!");
+        System.out.println("Here are the github usernames of our students:");
+        System.out.println(students.keySet());
+        System.out.println("Which student would you like to know more information about?");
 
-        System.out.println(students.get("Which student would you like to know more information about?"));
     }
+
+
+
+
+
 }
