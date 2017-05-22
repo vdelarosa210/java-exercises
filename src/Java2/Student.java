@@ -7,40 +7,32 @@ import java.util.ArrayList;
  */
 public class Student {
 
-    private String studentName;
-    private int studentGrade;
-
-    public static void main(String[] args) {
-
-        ArrayList<Integer> grades = new ArrayList<Integer>();
-        grades.add(78);
-        grades.add(89);
-        grades.add(90);
-        System.out.println(grades.size());
-
-    }
-
-
+    private String name;
+    private ArrayList<Integer> grades;
 
     //=====Constructor=====//
-    public Student(String studentName, int studentGrade) {
-        this.studentName = studentName;
-        this.studentGrade = studentGrade;
+    public Student(String name) {
+        this.name = name;
+        this.grades = new ArrayList<Integer>();
     }
 
     //=====returns the student's name=====//
-    public String getName(){
-        return studentName;
+    public String getName() {
+        return this.name;
     }
 
-    // adds the given grade to the grades property
-    public void addGrade() {
-        addGrade();
+    //=====adds the given grade to the grades property=====//
+    public void addGrade(int grade) {
+        this.grades.add(grade);
     }
 
-    // returns the average of the students grades
+    //=====returns the average of the students grades=====//
     public double getGradeAverage() {
-        return 0;
+        double sum = 0;
+        for(int grade: this.grades){
+            sum += grade;
+        }
+        return(sum/this.grades.size());
     }
 
 }
