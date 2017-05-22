@@ -21,10 +21,14 @@ public class GradesApplication {
         System.out.println(Violet.getGradeAverage());
 
 
-//        Map students = new HashMap(, 89);
-//
-//        students.put(Vi);
-//
-//        System.out.println(students.get("Vi"));
+        Map students = new HashMap();
+
+        students.put("Aris", 90);
+        students.put("Isaac", 75);
+        students.put("Jovani", 88);
+        students.put("Jonathan", 95);
+
+
+        System.out.println(students.get("Which student would you like to know more information about?"));
     }
 }
