@@ -50,7 +50,6 @@ public class GradesApplication {
         students.put("AtxJovani", Jovani);
 
 
-
         System.out.println("Welcome!");
         System.out.println("Here are the github usernames of our students:");
         System.out.println(students.keySet());
@@ -58,7 +57,9 @@ public class GradesApplication {
         System.out.println("Which student would you like to know more information about?");
         String username = input.next();
 
-        if (students.containsKey(username)){
+        if (!students.containsKey(username)) {
+            System.out.println("Sorry, no student found with the github username of " + username + " .");
+        } else {
             Student student = students.get(username);
             System.out.println("Name: " + student.getName() + " Username: " + username + " Current Average: " + student.getGradeAverage());
         }
