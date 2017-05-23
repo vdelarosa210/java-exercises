@@ -42,20 +42,26 @@ public class GradesApplication {
 //        System.out.println("The grade point average for Jovani is " + Jovani.getGradeAverage());
 
 
-        Map students = new HashMap();
+        Map<String, Student> students = new HashMap<>();
 
-        students.put("vdelarosa210", 89);
-        students.put("Arisdcks", 87);
-        students.put("Isaac620", 76);
-        students.put("Jovaniatx", 88);
+        students.put("vdelarosa210", Violet);
+        students.put("Arisdcks", Aris);
+        students.put("Isaac620", Isaac);
+        students.put("AtxJovani", Jovani);
 
 
 
         System.out.println("Welcome!");
         System.out.println("Here are the github usernames of our students:");
         System.out.println(students.keySet());
-        System.out.println("Which student would you like to know more information about?");
 
+        System.out.println("Which student would you like to know more information about?");
+        String username = input.next();
+
+        if (students.containsKey(username)){
+            Student student = students.get(username);
+            System.out.println("Name: " + student.getName() + " Username: " + username + " Current Average: " + student.getGradeAverage());
+        }
 
         System.out.println("Would you like to see another student? (y/n)");
 
