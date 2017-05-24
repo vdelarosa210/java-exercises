@@ -27,8 +27,8 @@ public class InputTest {
         double minD = 10;
         double maxD = 100;
 
-//        System.out.println("Please provide a price between " + minD + " and " + maxD);
-//        System.out.printf("The price you provided is " + response.getDouble(minD, maxD));
+        System.out.println("Please provide a price between " + minD + " and " + maxD);
+        System.out.printf("The price you provided is " + response.getDouble(minD, maxD));
 
 
 
