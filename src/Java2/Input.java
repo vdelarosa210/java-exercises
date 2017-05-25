@@ -40,7 +40,6 @@ public class Input {
     public int getInt(int min, int max) {
         int n1;
         try {
-
             n1 = Integer.valueOf(this.getString());
         } catch (NumberFormatException e) {
             System.out.println("Please enter an integer between " + min + " and " + max + ": ");
@@ -56,7 +55,7 @@ public class Input {
     public double getDouble() {
         try {
             return Double.valueOf(this.getString());
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Please enter *a Double*");
         }
         return getDouble();
@@ -64,7 +63,14 @@ public class Input {
 
     //=====Getter for Double=====//
     public double getDouble(double min, double max) {
-        double n1 = this.getDouble();
+        double n1;
+        try {
+            n1 = Double.valueOf(this.getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Please enter an integer between " + min + " and " + max + ": ");
+            return getDouble(min, max);
+        }
+
         if (n1 >= min && n1 <= max) {
             return n1;
         }
