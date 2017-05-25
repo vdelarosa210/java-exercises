@@ -54,7 +54,12 @@ public class Input {
     }
 
     public double getDouble() {
-        return scan.nextDouble();
+        try {
+            return Double.valueOf(this.getString());
+        }catch (NumberFormatException e){
+            System.out.println("Please enter *a Double*");
+        }
+        return getDouble();
     }
 
     //=====Getter for Double=====//
