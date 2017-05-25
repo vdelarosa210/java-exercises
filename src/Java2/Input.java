@@ -30,15 +30,22 @@ public class Input {
     public int getInt() {
         try {
             return Integer.valueOf(this.getString());
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Please enter *an integer*");
-        }return getInt();
+        }
+        return getInt();
     }
 
     //=====Getter for Int=====//
     public int getInt(int min, int max) {
-        int n1 = this.getInt();
+        int n1;
+        try {
 
+            n1 = Integer.valueOf(this.getString());
+        } catch (NumberFormatException e) {
+            System.out.println("Please enter an integer between " + min + " and " + max + ": ");
+            return getInt(min, max);
+        }
         if (n1 >= min && n1 <= max) {
             return n1;
         }
@@ -56,8 +63,8 @@ public class Input {
         if (n1 >= min && n1 <= max) {
             return n1;
         }
-            System.out.println(n1 + " is out of range. Please try again.");
-            return getDouble(min, max);
+        System.out.println(n1 + " is out of range. Please try again.");
+        return getDouble(min, max);
 
     }
 
