@@ -28,9 +28,14 @@ public class Input {
     }
 
     public int getInt() {
-        return scan.nextInt();
+        try {
+            return Integer.valueOf(this.getString());
+        }catch (NumberFormatException e){
+            System.out.println("Please enter *an integer*");
+        }return getInt();
     }
 
+    //=====Getter for Int=====//
     public int getInt(int min, int max) {
         int n1 = this.getInt();
 
@@ -45,14 +50,15 @@ public class Input {
         return scan.nextDouble();
     }
 
+    //=====Getter for Double=====//
     public double getDouble(double min, double max) {
         double n1 = this.getDouble();
-
         if (n1 >= min && n1 <= max) {
             return n1;
         }
-        System.out.println(n1 + " is out of range. Please try again.");
-        return getDouble(min, max);
+            System.out.println(n1 + " is out of range. Please try again.");
+            return getDouble(min, max);
+
     }
 
 }
